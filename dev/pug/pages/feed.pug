@@ -1,0 +1,127 @@
+.feed
+    .feed__container.container
+        .feed__user.user
+            aside.user__details
+                header.user__header
+                    .user__avatar-wrapper
+                        img.user__avatar(src="static/images/content/user-avatar-big.png", alt="main user avatar")
+                    .user__info
+                        .user__name Benjamin Clementine
+                        .user__username @benclementine
+                        a.user__edit.user-edit(href="#")
+                            svg.user-edit__icon(width='15', height='15', viewBox='0 0 15 15', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                path(fill-rule='evenodd', clip-rule='evenodd', d='M7.89633 1.41421C8.67738 0.633165 9.94371 0.633165 10.7248 1.41421L13.5532 4.24264C14.3342 5.02369 14.3342 6.29002 13.5532 7.07107L6.60476 14.0195C6.52246 14.1018 6.41404 14.1528 6.29817 14.1637L2.58247 14.5143C1.32207 14.6332 0.269682 13.566 0.406279 12.3074L0.801581 8.66504C0.813878 8.55174 0.864518 8.44603 0.945108 8.36544L7.89633 1.41421ZM8.60266 3.53631C8.99318 3.14579 9.62635 3.14579 10.0169 3.53631L11.4311 4.95053C11.8216 5.34105 11.8216 5.97422 11.4311 6.36474L10.7232 7.07263L7.89477 4.2442L8.60266 3.53631ZM6.47978 5.6592L2.9428 9.19617L2.52896 11.2615C2.3887 11.9614 3.00596 12.5787 3.70594 12.4384L5.77123 12.0246L9.30821 8.48762L6.47978 5.6592Z', fill='#3E3F58')
+                            .user-edit__title Edit Profile
+                    .user__more.more
+                        button.more__btn(type="button")
+                            svg(width='4', height='16', viewBox='0 0 4 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                mask#path-1-inside-1(fill='white')
+                                    path(fill-rule='evenodd', clip-rule='evenodd', d='M4 2C4 3.10457 3.10457 4 2 4C0.89543 4 0 3.10457 0 2C0 0.89543 0.89543 0 2 0C3.10457 0 4 0.89543 4 2ZM4 8C4 9.10457 3.10457 10 2 10C0.89543 10 0 9.10457 0 8C0 6.89543 0.89543 6 2 6C3.10457 6 4 6.89543 4 8ZM2 16C3.10457 16 4 15.1046 4 14C4 12.8954 3.10457 12 2 12C0.89543 12 0 12.8954 0 14C0 15.1046 0.89543 16 2 16Z')
+                                path(id="dots", d='M2 6C4.20914 6 6 4.20914 6 2H2V6ZM-2 2C-2 4.20914 -0.209139 6 2 6V2H-2ZM2 -2C-0.209139 -2 -2 -0.209139 -2 2H2V-2ZM6 2C6 -0.209139 4.20914 -2 2 -2V2H6ZM2 12C4.20914 12 6 10.2091 6 8H2V12ZM-2 8C-2 10.2091 -0.209139 12 2 12V8H-2ZM2 4C-0.209139 4 -2 5.79086 -2 8H2V4ZM6 8C6 5.79086 4.20914 4 2 4V8H6ZM2 14V18C4.20914 18 6 16.2091 6 14H2ZM2 14H6C6 11.7909 4.20914 10 2 10V14ZM2 14V10C-0.209139 10 -2 11.7909 -2 14H2ZM2 14H-2C-2 16.2091 -0.209139 18 2 18V14Z', fill='#3E4056', mask='url(#path-1-inside-1)')
+                        .more__popup-list
+                            a.more__item(href="#")
+                                img.more__icon(src="static/images/content/icon_report.svg", alt="report icon")
+                                .more__text Report User
+                            a.more__item(href="#")
+                                img.more__icon(src="static/images/content/icon_block.svg", alt="block icon")
+                                .more__text Block User
+                .user__meta.meta
+                    .meta__column
+                        .meta__title 45
+                        span.meta__text synths
+                    .meta__column
+                        .meta__title 110
+                        span.meta__text followers
+                    .meta__column
+                        .meta__title 322
+                        span.meta__text following
+                p.user__description Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each, according to CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and Ethereum.
+            main.user__content
+                .user__privacy-switcher.privacy-switcher
+                    .privacy-switcher__wrapper
+                        .privacy-switcher__option Public
+                        .privacy-switcher__switcher
+                            input.privacy-switcher__input(type="checkbox", id="switch", checked="true")
+                            label.privacy-switcher__label(for="switch")
+                        .privacy-switcher__option Private
+                .user__articles.articles
+                    article.articles__article.article
+                        .article__shared-info
+                            .article__shared-content
+                                span Shared to
+                                span.article__label.label.label--blue #discussionaboutanimgttddswefwefwef…
+                        .article__text New air routes that promise cheap flights in
+                        .article__meta
+                            .article__author.author
+                                .author__photo-wrapper
+                                    img.author__photo(src="static/images/content/oval.png", alt="author")
+                                .author__name Gregory Watkins
+                            .article__share
+                                button.article__share-btn(type="button") Share
+                            .article__stats.stats
+                                .stats__column.stats__views
+                                    img.stats__icon(src="static/images/content/icon_view.svg", alt="view icon")
+                                    .stats__count 88
+                                .stats__column.stats__likes
+                                    img.stats__icon(src="static/images/content/icon_like.svg", alt="like icon")
+                                    .stats__count 24
+                    article.articles__article.article
+                        .article__shared-info
+                            .article__shared-content
+                                img.article__shared-icon(src="static/images/content/icon_link.svg", alt="link icon")
+                                span Shared via weblink
+                        .article__text New air routes that promise cheap flights in
+                        .article__meta
+                            .article__author.author
+                                .author__photo-wrapper
+                                    img.author__photo(src="static/images/content/oval.png", alt="author")
+                                .author__name Gregory Watkins
+                            .article__share
+                                button.article__share-btn(type="button") Share
+                            .article__stats.stats
+                                .stats__column.stats__views
+                                    img.stats__icon(src="static/images/content/icon_view.svg", alt="view icon")
+                                    .stats__count 88
+                                .stats__column.stats__likes
+                                    img.stats__icon(src="static/images/content/icon_like.svg", alt="like icon")
+                                    .stats__count 24
+                    article.articles__article.article
+                        .article__shared-info
+                            .article__shared-content
+                                span Shared to
+                                span.article__label.label.label--blue #discussionaboutanimgttddswefwefwef…
+                        .article__text New air routes that promise cheap flights in
+                        .article__meta
+                            .article__author.author
+                                .author__photo-wrapper
+                                    img.author__photo(src="static/images/content/oval.png", alt="author")
+                                .author__name Gregory Watkins
+                            .article__share
+                                button.article__share-btn(type="button") Share
+                            .article__stats.stats
+                                .stats__column.stats__views
+                                    img.stats__icon(src="static/images/content/icon_view.svg", alt="view icon")
+                                    .stats__count 88
+                                .stats__column.stats__likes
+                                    img.stats__icon(src="static/images/content/icon_like.svg", alt="like icon")
+                                    .stats__count 24
+                    article.articles__article.article
+                        .article__shared-info
+                            .article__shared-content
+                                img.article__shared-icon(src="static/images/content/icon_link.svg", alt="link icon")
+                                span Shared via weblink
+                        .article__text New air routes that promise cheap flights in
+                        .article__meta
+                            .article__author.author
+                                .author__photo-wrapper
+                                    img.author__photo(src="static/images/content/oval.png", alt="author")
+                                .author__name Gregory Watkins
+                            .article__share
+                                button.article__share-btn(type="button") Share
+                            .article__stats.stats
+                                .stats__column.stats__views
+                                    img.stats__icon(src="static/images/content/icon_view.svg", alt="view icon")
+                                    .stats__count 88
+                                .stats__column.stats__likes
+                                    img.stats__icon(src="static/images/content/icon_like.svg", alt="like icon")
+                                    .stats__count 24

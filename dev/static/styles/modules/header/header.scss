@@ -1,1 +1,135 @@
-header { flex: 0 0 auto; }
+.header {
+  flex: 0 0 auto;
+  padding: 21px 0 0;
+  background: $color-white;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.06);
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+
+  &__logo {
+    path {
+      transition: 0.1s ease-out;
+    }
+
+    &:hover {
+      path {
+        fill: $color-red;
+      }
+    }
+  }
+
+  &__bottom {
+    position: relative;
+  }
+
+  &__action-button-wrapper {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 64px;
+    height: 64px;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__action-button {
+    position: relative;
+    background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      background: $color-white;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.1s ease-in-out;
+    }
+
+    &::before {
+      width: 20px;
+      height: 2px;
+    }
+
+    &::after {
+      width: 2px;
+      height: 20px;
+    }
+  }
+}
+
+.profile {
+  display: flex;
+
+  &__info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 25px;
+
+    &:hover {
+      .profile__name,
+      .profile__avatar {
+        opacity: 0.6;
+      }
+
+      &::after {
+        transform: scale(1.2) translateY(-50%);
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: url("../images/content/arrow-down.svg") no-repeat;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 6px;
+      opacity: 0.4;
+      transition: 0.2s ease-out;
+    }
+  }
+
+  &__name {
+    color: $color-main;
+    transition: 0.1s ease-out;
+  }
+
+  &__avatar {
+    margin-left: 20px;
+    transition: 0.1s ease-out;
+  }
+
+  &__links {
+    display: flex;
+    margin-left: 30px;
+  }
+
+  &__link {
+    svg {
+      transition: 0.1s ease-out;
+    }
+
+    &:hover {
+      svg {
+        opacity: 0.6;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.nav {
+  display: flex;
+
+  &__item {
+    position: relative;
+    font-size: 0.875rem;
+    color: $color-dark;
+    opacity: 0.6;
+    line-height: 1.1875rem;
+    mix-blend-mode: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.1s ease-out;
+    padding-bottom: 23px;
+
+    &:not(:last-child) {
+      margin-right: 37px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 4px;
+      left: 50%;
+      bottom: 0;
+      background: transparent;
+      transition: 0.2s ease-in-out;
+    }
+
+    &:hover {
+      opacity: 1;
+
+      &::after {
+        width: 100%;
+        left: 0;
+        background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+      }
+    }
+
+    &--active {
+      opacity: 1;
+
+      &::after {
+        width: 100%;
+        left: 0;
+        background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+      }
+    }
+  }
+}

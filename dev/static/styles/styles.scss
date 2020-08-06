@@ -13,6 +13,9 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: 'Open Sans', Arial, sans-serif;
+  background: rgba($color-light-blue, 0.4);
+  color: $color-main;
 }
 
 *,
@@ -41,6 +44,8 @@ dl,
 dd { margin: 0; }
 
 a:not([class]) { text-decoration-skip-ink: auto; }
+
+a { text-decoration: none; }
 
 img {
   max-width: 100%;
@@ -83,10 +88,10 @@ button { outline: none; }
   height: 100%;
 }
 
-.content { flex: 1 0 auto; }
+.page-content { flex: 1 0 auto; }
 
 .container {
-  margin: 0 auto;
+  margin: auto;
   max-width: $content-size;
   width: 100%;
 }
