@@ -7,10 +7,19 @@
   &__top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 18px;
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
   }
 
   &__logo {
+    @media (max-width: 480px) {
+      margin-bottom: 15px;
+    }
+
     path {
       transition: 0.1s ease-out;
     }
@@ -33,6 +42,12 @@
     width: 64px;
     height: 64px;
     transition: 0.1s ease-in-out;
+
+    @media (max-width: 768px) {
+      top: -6px;
+      width: 28px;
+      height: 28px;
+    }
 
     &:hover {
       transform: scale(1.1);
@@ -109,6 +124,10 @@
   &__name {
     color: $color-main;
     transition: 0.1s ease-out;
+
+    @media (max-width: 480px) {
+      font-size: 0.8rem;
+    }
   }
 
   &__avatar {
@@ -130,6 +149,67 @@
       svg {
         opacity: 0.6;
       }
+    }
+  }
+}
+
+.hamburger {
+  width: 28px;
+  height: 21px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  appearance: none;
+  background: transparent;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+
+  &.active {
+    .hamburger__item {
+      &:nth-child(1) {
+        top: 7px;
+        transform: rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+      }
+
+      &:nth-child(3) {
+        top: 7px;
+        transform: rotate(-135deg);
+      }
+    }
+  }
+
+  &__item {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: $color-dark;
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 7px;
+    }
+
+    &:nth-child(3) {
+      top: 14px;
     }
   }
 }
